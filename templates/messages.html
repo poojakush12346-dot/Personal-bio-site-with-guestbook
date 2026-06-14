@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guestbook Messages</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body class="messages-page">
+
+<nav>
+    <a href="/">Home</a>
+    <a href="/about">About</a>
+    <a href="/contact">Contact</a>
+    <a href="/messages">Messages</a>
+</nav>
+
+<div class="container">
+    <h1>Guestbook Messages</h1>
+    <h2 style="font-size: 1.2rem; opacity: 0.8; margin-bottom: 40px;">See what others are saying</h2>
+
+    <div class="messages-wrapper">
+        {% for msg in messages %}
+        <div class="message-glow-card">
+            <div class="msg-header">
+                <h3>{{ msg[1] }}</h3>
+                <span class="msg-email">{{ msg[2] }}</span>
+            </div>
+            <div class="msg-body">
+                <p>{{ msg[3] }}</p>
+            </div>
+        </div>
+        {% endfor %}
+        
+        {% if not messages %}
+        <div class="message-glow-card" style="text-align: center;">
+            <p>No messages yet. Be the first to leave one!</p>
+        </div>
+        {% endif %}
+    </div>
+
+    <div class="button-group">
+        <a href="/contact" class="btn">Leave a Message</a>
+    </div>
+</div>
+
+</body>
+</html>

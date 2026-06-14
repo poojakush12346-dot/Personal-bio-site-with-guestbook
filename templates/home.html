@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+
+    <link rel="stylesheet"
+    href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+
+<nav>
+    <a href="/">Home</a>
+    <a href="/about">About</a>
+    <a href="/contact">Contact</a>
+    <a href="/messages">Messages</a>
+</nav>
+
+<div class="container">
+
+    <section class="hero-section">
+
+        <div class="hero-content">
+
+            <h2>Hi, I'm</h2>
+
+            <h1>Pooja Kushwaha</h1>
+
+            <h3>Full Stack Developer</h3>
+
+            <p class="hero-text">
+                Passionate about creating modern web applications
+                and solving real-world problems through technology.
+            </p>
+
+            <div class="button-group">
+                <a href="/contact" class="btn">
+                    Get In Touch
+                </a>
+
+                <a href="/about" class="btn">
+                    Read My Story
+                </a>
+            </div>
+
+        </div>
+
+        <div class="hero-image">
+            <img src="{{ url_for('static', filename='profile.jpg') }}"
+                 alt="Profile Photo">
+        </div>
+
+    </section>
+
+    <section class="connect-section">
+
+        <h2>🤝 Let's Build Something Together</h2>
+
+        <p>
+            Whether it's a side project, full project,
+            or just a chat — I love to connect.
+        </p>
+
+        <br>
+
+        <a>📧 Email: poojakush12346@gmail.com</a><br>
+
+
+        <a>
+            💼 LinkedIn:
+            https://www.linkedin.com/in/pooja-kushwaha-0729a2398
+        </a>
+
+    </section>
+
+
+
+</div>
+
+</body>
+</html>

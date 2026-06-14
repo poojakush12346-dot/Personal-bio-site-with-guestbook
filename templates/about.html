@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Personal Bio</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body class="about-page">
+
+<nav>
+    <a href="/">Home</a>
+    <a href="/about">About</a>
+    <a href="/contact">Contact</a>
+    <a href="/messages">Messages</a>
+</nav>
+
+<div class="container">
+
+    <section class="about-hero-layout">
+        <div class="about-photo-wrapper">
+            <img src="{{ url_for('static', filename='profile.jpg') }}" alt="Pooja Kushwaha" class="square-photo">
+        </div>
+        <div class="about-hero-text">
+            <h1>About Me</h1>
+            <p>
+                Hello! I'm <strong>Pooja Kushwaha</strong>, a passionate learner
+                and aspiring Full Stack Developer who enjoys creating modern web
+                applications and solving real-world problems through technology. 
+                I love exploring modern tools, diving into code, and building 
+                practical applications that bridge creativity and functionality.<br>
+                I grew up tinkering with computers — disassembling them, putting them back together, and eventually writing my first lines of HTML at age 18. That curiosity never left me. I pursued Computer Science at AKTU University, where I discovered a deep love for elegant systems and the human side of technology.
+
+While graduating I joined a fast-growing fintech startup as a junior engineer, quickly taking ownership of the customer-facing dashboard. I learned how to balance speed and quality under real product pressure — and how much the smallest UX details matter to users.
+
+Today I work as a full-stack developer, splitting my time between product work and open-source contributions. I believe good software is kind: it respects the user's time, is honest about its limitations, and gets out of the way.
+            </p>
+        </div>
+    </section>
+
+    
+
+    <section class="about-section column-align-left">
+        <h2>💻 Technical Skills</h2>
+        <div class="skills-progress-container">
+            
+            <div class="skill-progress-item">
+                <div class="skill-info">
+                    <span>HTML5 & CSS3</span>
+                    <span>90%</span>
+                </div>
+                <div class="progress-bar"><div class="progress" style="width: 90%;"></div></div>
+            </div>
+
+            <div class="skill-progress-item">
+                <div class="skill-info">
+                    <span>JavaScript</span>
+                    <span>80%</span>
+                </div>
+                <div class="progress-bar"><div class="progress" style="width: 80%;"></div></div>
+            </div>
+
+            <div class="skill-progress-item">
+                <div class="skill-info">
+                    <span>Python & Flask</span>
+                    <span>75%</span>
+                </div>
+                <div class="progress-bar"><div class="progress" style="width: 75%;"></div></div>
+            </div>
+
+            <div class="skill-progress-item">
+                <div class="skill-info">
+                    <span>SQLite & Databases</span>
+                    <span>70%</span>
+                </div>
+                <div class="progress-bar"><div class="progress" style="width: 70%;"></div></div>
+            </div>
+
+        </div>
+    </section>
+
+    <section class="about-section column-align-left">
+        <h2>🚀 My Journey</h2>
+        <ul class="journey-timeline">
+            
+            <li>
+                <span class="timeline-dot"></span>
+                <strong>Dr. A.P.J. Abdul Kalam Technical University (AKTU)</strong> — B.Tech in Computer Science & Engineering (CSE)
+            </li>
+            <li>
+                <span class="timeline-dot"></span>
+                <strong>Intern</strong> — Mira Future Tech Vision Pvt Ltd
+            </li>
+        </ul>
+    </section>
+
+    <div class="two-column-layout">
+        <section class="about-section column-item text-left">
+            <h2>📈 Career Goal</h2>
+            <p>
+                My goal is to become a professional Full Stack Developer,
+                master advanced backend technologies, APIs, React,
+                cloud computing, and contribute to impactful digital products.
+            </p>
+        </section>
+
+        <section class="about-section column-item text-left">
+            <h2>❤️ Interests</h2>
+            <p>
+                Web Development, Programming, UI Design, Technology,
+                Learning New Skills, and Building Real-World Projects.
+            </p>
+        </section>
+    </div>
+
+</div>
+
+</body>
+</html>
